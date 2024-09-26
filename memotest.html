@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Memotest 360</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet"> 
+</head>
+<body>
+    <div class="inicio">
+        <div class="text-inicio">
+            <p class=title>Memotest</p>
+            <p>👋🏻 Vamos a jugar al Memotest</p>
+            <p>Pero antes de empezar...</p>
+            <p>completá los datos para participar</p><br>
+        </div>
+        <div class="inputNombre">
+            Nombre <input type="text" size="15" id='name' onfocus="this.value=''">
+        </div>
+		<div class="inputNombre">
+            DNI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="15" id='dni' onfocus="this.value=''">
+        </div>
+		<div class="inputNombre">
+            Celular&nbsp;&nbsp;&nbsp;<input type="text" size="15" id='tel' onfocus="this.value=''">
+        </div>
+        <div class="question">
+            <p>Con que dificultad te gustaria jugar?</p>
+        </div>
+        <div class="botones">
+            <button id=facil>FACIL</button>
+            <button id=intermedio>INTERMEDIO</button>
+            <button id=experto>EXPERTO</button>
+        </div>
+        <div class="error">UPSS...El nombre es requerido</div>
+		<div><p><br><br><button id="descargar-json">Fin del día</button> </div></p><!-- Botón de descarga -->
+    </div>
+    <div class="main-container">
+        <div class="text-container">
+            <h1 class="title">Memotest</h1>
+            <div class="saludo"></div>
+            <div class="intentos-txt">Encontra todos los pares en menos de <span class="num-intentos"></span> intentos</div> 
+            <p>Nivel</p> 
+            <div class="nivel"></div>
+        </div>
+        <div class="tablero"></div>
+        <div class="intentos"><p class="contador-intentos">Intentos: </p></div>
+    </div>
+    <div id="modal" class="oculto">
+        <div id="gana" class="oculto">
+            <div class="gana-msg">
+                <p>Ganaste! con <span class="intentos-span"></span> intentos</p>
+            </div>
+            <div class="botones">
+                <button class="volver-jugar" onclick="agregarJugador()">VOLVER A JUGAR</button>
+            </div>
+            <div class="ranking"></div>
+        </div> 
+        <div id="pierde" class="oculto">
+            <div class="pierde-msg">
+                <p>Perdiste! 😢</p>
+            </div>
+            <div class="botones">
+                <button class="volver-jugar" onclick="agregarJugador()">VOLVER A JUGAR</button>
+            </div>
+        </div> 
+		
+    </div>    
+	<audio id="correct-sound" src="media/short_success.ogg"></audio>
+	<audio id="wrong-sound" src="media/error.ogg"></audio>
+	<audio id="flip-sound" src="media/flip_card.ogg"></audio>
+	<audio id="end-sound" src="media/success.ogg"></audio>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/memotest.js"></script>
+</body>
+</html>
