@@ -179,6 +179,8 @@ function ganaPierde(){ //muestra el mensaje ganador o perdedor
   if (clicks === (niveles[jugadorInfo.nivel].intentos * 2) && aciertos < 6){ //pierde (superó el número de intentos disponibles)
     $('#modal').removeClass('oculto');
     $('#pierde').removeClass('oculto');
+	  guardarJugador();
+	   armarRanking();
   }
 }; 
 
