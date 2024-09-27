@@ -48,7 +48,7 @@ body {
   text-align: center;
 }
 .inicio .inputNombre input {
-  width: 300px;
+  width: 200px;
 }
 .inicio .inputDNI {
   display: block;
