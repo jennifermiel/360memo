@@ -36,19 +36,19 @@ body {
   font-family: "Pacifico", cursive;
   color: #38acd5;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 30px;
   line-height: 2;
 }
 .inicio .inputNombre {
   font-family: "Pangolin", cursive;
-  font-size: 20px;
+  font-size: 10px;
   margin: 0;
   line-height: 1;
   display: block;
   text-align: center;
 }
 .inicio .inputNombre input {
-  width: 300px;
+  width: 200px;
 }
 .inicio .inputDNI {
   display: block;
