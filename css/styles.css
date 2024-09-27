@@ -48,7 +48,7 @@ body {
   text-align: center;
 }
 .inicio .inputNombre input {
-  width: 200px;
+  width: 300px;
 }
 .inicio .inputDNI {
   display: block;
@@ -142,8 +142,8 @@ body {
 .main-container .tablero .card {
   border-style: solid;
   border-color: #ff9802;
-  width: 23%;
-  height: 200px;
+  width: 12%;
+  height: auto;
   margin: 5px;
   position: relative;
 }
